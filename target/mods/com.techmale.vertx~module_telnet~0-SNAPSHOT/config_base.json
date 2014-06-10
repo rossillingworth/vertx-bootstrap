@@ -1,0 +1,6 @@
+{
+    "PNC_HOST":"mit-civica-web.cloudapp.net",
+    "PNC_PORT":8085,
+    "PNC_URI":"/LynxTransaction/",
+    "PNC_CONNECTION_TIME_OUT":30000
+}

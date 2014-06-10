@@ -1,0 +1,16 @@
+{
+    "exampleString":"some text",
+    "bootstrap":{
+        "allowRest":false,
+        "port":8888
+    },
+    "modules":[
+        {
+            "fullname":"com.techmale.vertx~module_telnet~0-SNAPSHOT",
+            "instances":1,
+            "config":{
+                "a":1
+            }
+        }
+    ]
+}
