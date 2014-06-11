@@ -44,9 +44,10 @@ public class BootstrapVerticle extends VerticleBase {
             String moduleConfStr = moduleSpecs.get("config").toString();
             JsonObject moduleConf = new JsonObject(moduleConfStr);
 
-            container.logger().info(String.format("Name %s",name));
-            container.logger().info(String.format("instances %s",instances));
-            container.logger().info(String.format("config %s",moduleConfStr));
+            container.logger().info("###### DEPLOYING #########");
+            container.logger().info(String.format("Name:      %s",name));
+            container.logger().info(String.format("instances: %s",instances));
+            container.logger().info(String.format("config:    %s",moduleConfStr));
 
             container.deployModule(name,moduleConf,instances,new Handler<AsyncResult<String>>() {
                 @Override
